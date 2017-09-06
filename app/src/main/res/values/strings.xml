@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">EasyItemDecoration</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="author_name">PiajiJaz</string>
+    <string name="author_email">whereinow@gmail.com</string>
+
+    <string name="setting">Setting</string>
+    <string name="setting_attributes">Attributes</string>
+    <string name="setting_dimen">Dimen</string>
+    <string name="setting_color">Color</string>
+    <string name="setting_draw">Draw Divider</string>
+    <string name="setting_draw_out_frame">Draw Out Frame</string>
+    <string name="setting_orientation">Vertical/Horizontal</string>
+    <string name="setting_style">Flat/Card</string>
+    <string name="setting_divider_width">Divider Width</string>
+    <string name="setting_divider_color">Divider Color</string>
+    <string name="setting_set_left">Set Left</string>
+    <string name="setting_set_right">Set Right</string>
+    <string name="setting_set_top">Set Top</string>
+    <string name="setting_set_bottom">Set Bottom</string>
+    <string name="setting_draw_border">Draw Out Border</string>
+
+</resources>

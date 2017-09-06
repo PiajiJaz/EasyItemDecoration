@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/SettingGroupStyle"
+        android:text="@string/setting_attributes" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/SettingItemStyle"
+            android:text="@string/setting_orientation" />
+
+        <Switch
+            android:id="@+id/swOrientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="25dp"
+            android:enabled="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/SettingItemStyle"
+            android:text="@string/setting_style" />
+
+        <Switch
+            android:id="@+id/swStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="25dp"
+            android:enabled="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider" />
+
+    <TextView
+        style="@style/SettingGroupStyle"
+        android:text="@string/setting_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/SettingItemStyle"
+            android:text="@string/setting_draw" />
+
+        <Switch
+            android:id="@+id/swDraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="25dp"
+            android:enabled="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/SettingItemStyle"
+            android:text="@string/setting_draw_out_frame" />
+
+        <Switch
+            android:id="@+id/swDrawOutFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="25dp"
+            android:enabled="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvColor"
+            style="@style/SettingItemStyle"
+            android:text="@string/setting_divider_color" />
+
+        <View
+            android:id="@+id/vColor"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="25dp"
+            android:background="@color/colorDivider" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider" />
+
+    <TextView
+        style="@style/SettingGroupStyle"
+        android:text="@string/setting_dimen" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/SettingItemStyle"
+            android:text="@string/setting_divider_width" />
+
+        <com.gc.materialdesign.views.Slider
+            android:id="@+id/sldWidth"
+            style="@style/SettingSliderStyle"
+            materialdesign:showNumberIndicator="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/SettingItemStyle"
+            android:text="@string/setting_set_left" />
+
+        <com.gc.materialdesign.views.Slider
+            android:id="@+id/sldLeft"
+            style="@style/SettingSliderStyle"
+            materialdesign:showNumberIndicator="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/SettingItemStyle"
+            android:text="@string/setting_set_right" />
+
+        <com.gc.materialdesign.views.Slider
+            android:id="@+id/sldRight"
+            style="@style/SettingSliderStyle"
+            materialdesign:showNumberIndicator="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/SettingItemStyle"
+            android:text="@string/setting_set_top" />
+
+        <com.gc.materialdesign.views.Slider
+            android:id="@+id/sldTop"
+            style="@style/SettingSliderStyle"
+            materialdesign:showNumberIndicator="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/SettingItemStyle"
+            android:text="@string/setting_set_bottom" />
+
+        <com.gc.materialdesign.views.Slider
+            android:id="@+id/sldBottom"
+            style="@style/SettingSliderStyle"
+            materialdesign:showNumberIndicator="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

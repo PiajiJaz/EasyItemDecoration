@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/navGroup">
+        <item
+            android:id="@+id/navLinear"
+            android:icon="@drawable/ic_one"
+            android:title="LinearLayout" />
+        <item
+            android:id="@+id/navGrid"
+            android:icon="@drawable/ic_two"
+            android:title="GridLayout" />
+        <item
+            android:id="@+id/navStaggered"
+            android:icon="@drawable/ic_three"
+            android:title="StaggeredGridLayout" />
+    </group>
+
+    <item android:title="Setting">
+        <menu>
+            <item
+                android:id="@+id/navSetting"
+                android:icon="@drawable/ic_setting"
+                android:title="Setting" />
+        </menu>
+    </item>
+
+</menu>

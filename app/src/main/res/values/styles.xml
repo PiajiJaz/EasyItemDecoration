@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Translucent" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <!-- Toolbar样式 -->
+    <style name="ToolbarStyle">
+        <item name="android:minHeight">?actionBarSize</item>
+        <item name="android:background">?colorPrimary</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ToolbarTheme</item>
+    </style>
+
+    <!-- Toolbar主题 -->
+    <style name="ToolbarTheme">
+        <item name="colorControlNormal">@color/colorTextWhite</item>
+        <item name="android:actionMenuTextColor">@color/colorTextWhite</item>
+    </style>
+
+    <style name="SettingGroupStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SettingItemStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/selector_setting_item</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:paddingStart">25dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="SettingSliderStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+</resources>
