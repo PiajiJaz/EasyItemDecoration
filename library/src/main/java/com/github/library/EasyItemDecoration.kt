@@ -17,6 +17,7 @@ import android.view.View
 
 open class EasyItemDecoration(build: Builder) : RecyclerView.ItemDecoration() {
     private val TAG = EasyItemDecoration::class.java.simpleName
+
     private var dividerWidth: Int = 0
     private var left: Int = 0
     private var top: Int = 0
@@ -416,45 +417,57 @@ open class EasyItemDecoration(build: Builder) : RecyclerView.ItemDecoration() {
 
     class Builder {
         var dividerWidth: Int = 0
+            private set
         var left: Int? = 0
+            private set
         var top: Int? = 0
+            private set
         var right: Int? = 0
+            private set
         var bottom: Int? = 0
+            private set
         var isDrawDivider: Boolean = false
+            private set
         var isDrawOutBorder: Boolean = false
+            private set
         var dividerColor: Int? = null
+            private set
         var dividerDrawable: Drawable? = null
+            private set
         var isDrawStartDivider: Boolean = false
+            private set
         var isDrawEndDivider: Boolean = false
+            private set
         var customItemDrawOver: CustomItemDrawOver? = null
+            private set
 
-        fun dp2px(dpVal: Float): Int {
+        private fun dp2px(dpVal: Float): Int {
             return (TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
                     dpVal, Resources.getSystem().displayMetrics) + 0.5f).toInt()
         }
 
-        fun setLeft(left: Float): Builder {
-            this.left = dp2px(left)
+        fun setLeft(dpVal: Float): Builder {
+            this.left = dp2px(dpVal)
             return this
         }
 
-        fun setTop(top: Float): Builder {
-            this.top = dp2px(top)
+        fun setTop(dpVal: Float): Builder {
+            this.top = dp2px(dpVal)
             return this
         }
 
-        fun setRight(right: Float): Builder {
-            this.right = dp2px(right)
+        fun setRight(dpVal: Float): Builder {
+            this.right = dp2px(dpVal)
             return this
         }
 
-        fun setBottom(bottom: Float): Builder {
-            this.bottom = dp2px(bottom)
+        fun setBottom(dpVal: Float): Builder {
+            this.bottom = dp2px(dpVal)
             return this
         }
 
-        fun setDividerWidth(dividerWidth: Float): Builder {
-            this.dividerWidth = dp2px(dividerWidth)
+        fun setDividerWidth(dpVal: Float): Builder {
+            this.dividerWidth = dp2px(dpVal)
             return this
         }
 
