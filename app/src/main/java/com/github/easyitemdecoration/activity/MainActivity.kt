@@ -1,20 +1,20 @@
 package com.github.easyitemdecoration.activity
 
+import android.graphics.*
 import android.os.Bundle
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.OrientationHelper
-import android.support.v7.widget.StaggeredGridLayoutManager
+import android.support.v7.widget.*
 import android.view.MenuItem
 import com.github.easyitemdecoration.R
 import com.github.easyitemdecoration.adapter.NormalAdapter
 import com.github.easyitemdecoration.prefs
+import com.github.library.CustomItemDrawOver
 import com.github.library.EasyItemDecoration
 import com.whereinow.gankandroid.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
+
 
 class MainActivity : BaseActivity() {
 
@@ -66,10 +66,18 @@ class MainActivity : BaseActivity() {
                 .setRight(dividerRight!!)
                 .setTop(dividerTop!!)
                 .setBottom(dividerBottom!!)
-                .setDividerWidth(dividerWidth!!)
                 .setDividerColor(dividerColor!!)
 //                .setDrawStartDivider(true)
 //                .setDrawEndDivider(true)
+//                .setCustomItemDrawOver(object : CustomItemDrawOver {
+//                    override fun onDrawOver(c: Canvas, parent: RecyclerView, state: RecyclerView.State) {
+//                        val linearGradient = LinearGradient(0f, 0f, 0f, 100f, intArrayOf(Color.WHITE, 0), null,
+//                                Shader.TileMode.CLAMP)
+//                        val paint = Paint()
+//                        paint.shader = linearGradient
+//                        c.drawRect(0f, 0f, parent.right.toFloat(), 100f, paint)
+//                    }
+//                })
         return builder
     }
 
