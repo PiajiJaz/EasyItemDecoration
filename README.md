@@ -6,7 +6,7 @@ A flexible Item Decoration written by Kotlin.
 
 ## Add
 Step 1. Add the JitPack repository to your build file
-```java
+```
 allprojects {
     repositories {
       ...
@@ -16,7 +16,7 @@ allprojects {
 ```
 
 Step 2. Add the dependency
-```java
+```
 dependencies {
     compile 'com.github.PiajiJaz:EasyItemDecoration:v1.0.1'
 }
@@ -26,17 +26,17 @@ dependencies {
 ### In Kotlin
 ```kotlin
 val easyItemDecoration = EasyItemDecoration.Builder()
-                .setDrawDivider(true)
-                .setDividerWidth(1f)
-                .setDrawOutFrame(true)
-                .setLeft(10f)
-                .setRight(10f)
-                .setTop(10f)
-                .setBottom(10f)
-                .setDividerColor(dividerColor!!)
-                .setDrawStartDivider(false)
-                .setDrawEndDivider(false)
-                .build()
+        .setDrawDivider(true)
+        .setDividerWidth(1f)
+        .setDrawOutFrame(true)
+        .setLeft(10f)
+        .setRight(10f)
+        .setTop(10f)
+        .setBottom(10f)
+        .setDividerColor(R.color.colorDivider)
+        .setDrawStartDivider(false)
+        .setDrawEndDivider(false)
+        .build()
 recycler.layoutManager = LinearLayoutManager(baseContext, OrientationHelper.VERTICAL, false)
 recycler.adapter = NormalAdapter(getItemLayout(), dataList)
 recycler.addItemDecoration(easyItemDecoration)
@@ -44,16 +44,16 @@ recycler.addItemDecoration(easyItemDecoration)
 
 ### In Java
 ```java
-RecyclerView recycler = (RecyclerView) findViewById(R.id.recycler);
-recycler.setLayoutManager(new LinearLayoutManager(this));
-recycler.setAdapter(new JavaAdapter(dataList));
-EasyItemDecoration.Builder builder = new EasyItemDecoration.Builder();
 EasyItemDecoration itemDecoration = builder.setDrawDivider(true)
         .setDividerWidth(0.5f)
         .setRight(10f)
         .setLeft(10f)
         .setDividerColor(ContextCompat.getColor(this, R.color.colorPrimaryLight))
         .build();
+RecyclerView recycler = (RecyclerView) findViewById(R.id.recycler);
+recycler.setLayoutManager(new LinearLayoutManager(this));
+recycler.setAdapter(new JavaAdapter(dataList));
+EasyItemDecoration.Builder builder = new EasyItemDecoration.Builder();
 recycler.addItemDecoration(itemDecoration);
 ```
 
