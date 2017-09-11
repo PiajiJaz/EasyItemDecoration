@@ -18,7 +18,7 @@ allprojects {
 Step 2. Add the dependency
 ```
 dependencies {
-    compile 'com.github.PiajiJaz:EasyItemDecoration:v1.0.1'
+    compile 'com.github.PiajiJaz:EasyItemDecoration:1.0.1'
 }
 ```
 
