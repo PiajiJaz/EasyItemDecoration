@@ -53,7 +53,6 @@ EasyItemDecoration itemDecoration = builder.setDrawDivider(true)
 RecyclerView recycler = (RecyclerView) findViewById(R.id.recycler);
 recycler.setLayoutManager(new LinearLayoutManager(this));
 recycler.setAdapter(new JavaAdapter(dataList));
-EasyItemDecoration.Builder builder = new EasyItemDecoration.Builder();
 recycler.addItemDecoration(itemDecoration);
 ```
 
